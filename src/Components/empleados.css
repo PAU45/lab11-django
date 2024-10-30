@@ -1,0 +1,67 @@
+.employee-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: #f4f4f4; /* Fondo sutil para la lista */
+    border-radius: 10px; /* Esquinas redondeadas en la lista */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+}
+
+.employee-row {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* Fondo blanco para cada fila */
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Sombra más suave */
+    width: 100%;
+    transition: transform 0.2s, box-shadow 0.2s; /* Efecto al pasar el cursor */
+}
+
+.employee-row:hover {
+    transform: translateY(-2px); /* Ligera elevación al pasar el cursor */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el cursor */
+}
+
+.employee-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #007bff; /* Borde azul alrededor de la imagen del avatar */
+}
+
+.employee-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.employee-name {
+    font-weight: bold;
+    color: #007bff; /* Color azul para el nombre del empleado */
+    margin-bottom: 5px;
+    font-size: 1.1em; /* Tamaño de fuente más grande */
+}
+
+.employee-role {
+    color: #555; /* Color gris oscuro para el rol */
+    font-weight: bold;
+    font-size: 0.95em; /* Tamaño de fuente ligeramente mayor */
+}
+
+.employee-department {
+    background-color: #007bff; /* Color azul para el departamento */
+    padding: 4px 10px; /* Mayor padding para el departamento */
+    border-radius: 4px;
+    color: white;
+    font-size: 0.85em;
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 0.5px; /* Espaciado entre letras */
+}

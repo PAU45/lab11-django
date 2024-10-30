@@ -1,0 +1,120 @@
+.color-manager {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+   
+   
+    
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #fff; /* Fondo blanco para la sección de entrada */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+    justify-content: flex-start; /* Alinea todo a la izquierda */
+}
+.color-manager input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.color-bar {
+    width:  100px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px; /* Espacio a la derecha si hay otros elementos */
+}
+
+.add-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #61dafb;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end; /* Alinea el botón a la derecha */
+    margin-right: 10px; /* Espacio a la derecha */
+}
+
+.add-button:hover {
+    background-color: #21a1f1;
+}
+
+.color-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Espacio entre tarjetas */
+    width: 100%;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    align-items: stretch; /* Asegura que todas las tarjetas tengan la misma altura */
+}
+
+.color-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(20% - 10px); /* Ajustado para que quepan cinco tarjetas por fila */
+    max-width: 120px; /* Opcional, puedes ajustar esto o quitarlo */
+    transition: transform 0.3s ease;
+}
+
+
+.color-card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+}
+
+.color-name {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.color-display {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #eee; /* Color de fondo por defecto */
+}
+
+.remove-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff4d4d;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9em;
+}
+
+.remove-button:hover {
+    background-color: #e60000;
+}
